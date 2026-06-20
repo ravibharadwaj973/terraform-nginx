@@ -1,5 +1,5 @@
 resource "aws_security_group" "nginx_sg" {
-  name = "nginx-security-group-v2"
+ name_prefix = "nginx-sg-"
 
   ingress {
     from_port   = 80
