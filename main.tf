@@ -26,8 +26,8 @@ resource "aws_security_group" "nginx_sg" {
 
 resource "aws_instance" "nginx_server" {
 
-  ami           = "ami-0f58b397bc5c1f2e8"
-  instance_type = "t2.micro"
+ami           = "ami-0f58b397bc5c1f2e8" # Ensure this is an Ubuntu AMI for ap-south-1
+  instance_type = "t3.micro"             # <--- Change this from t2.micro to t3.micro
 
   security_groups = [
     aws_security_group.nginx_sg.name
