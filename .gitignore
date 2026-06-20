@@ -1,0 +1,10 @@
+# Ignore local Terraform configuration directories
+.terraform/
+
+# Ignore state files (you don't want these on GitHub either)
+*.tfstate
+*.tfstate.backup
+
+# Ignore variables that might contain secrets
+*.tfvars
+*.tfvars.json
